@@ -29,4 +29,5 @@ for (i, rect) in enumerate(rects):
 
 cv2.imshow("Output", image)
 cv2.waitKey(0)
+cv2.destroyAllWindows()
 cap.release()
