@@ -35,7 +35,7 @@ while True:
             EAR = ( aspect_ratio(leftEye) + aspect_ratio(rightEye) )/2
             if EAR < EAR_THRESHOLD:
                 COUNTER += 1
-                if COUNTER >= 15:        #To check that the eye was closed for atleast 15 input frames.
+                if COUNTER >= 36:        #To check that the eye was closed for atleast 36 input frames.
                     cv2.putText(frame, "ALERT: BE  AWAKE!!", (10, 30),cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
                     winsound.Beep(2500,duration = 500)
             else:
